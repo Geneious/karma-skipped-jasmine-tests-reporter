@@ -5,7 +5,7 @@ module.exports = {
     'reporter:skipped-tests': ['type', function (config) {
         this.onBrowserComplete = (browser) => {
             if (config.singleRun && browser.lastResult.skipped) {
-                const message = 'Tests skipped! Are you still using fit(), xit(), fdescribe() or xdescribe()?'
+                const message = '⁉️ Tests skipped! Are you still using fit(), xit(), fdescribe() or xdescribe()?'
                 console.error(message)
                 throw new Error(message)
             }
