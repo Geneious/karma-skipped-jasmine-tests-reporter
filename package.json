@@ -1,0 +1,9 @@
+{
+  "name": "karma-skipped-tests-reporter",
+  "version": "1.0.0",
+  "description": "Karma plugin to fail if any tests are skipped",
+  "main": "index.js",
+  "repository": "https://github.com/Geneious/karma-skipped-tests-reporter",
+  "author": "Bevan Rudge <bevan@geneious.com>",
+  "license": "MIT"
+}
