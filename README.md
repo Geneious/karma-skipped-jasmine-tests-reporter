@@ -1,6 +1,6 @@
 # Karma plugin to fail if any tests are skipped
 
-Fails a Karma test run if any tests were skipped. E.g. using `fit()`, `xit()`, `fdescribe()` or `xdescribe()` in Jasmine. 
+Fails a Karma test run if any tests were skipped and it was a single run. E.g. Using `fit()`, `xit()`, `fdescribe()` or `xdescribe()` in Jasmine.
 
 Inspired by [Karma Jasmine issue #225](https://github.com/karma-runner/karma-jasmine/issues/225).
 
@@ -10,10 +10,10 @@ Inspired by [Karma Jasmine issue #225](https://github.com/karma-runner/karma-jas
 yarn add karma-skipped-tests-reporter
 ```
 
-Add something like this to `karma.conf.js`:
+Add `'skipped-tests'` to the `reporters` array in `karma.conf.js`:
 
 ```js
 config.set({
-    reporters: ['skipped-tests'],
+    reporters: config.reporters.concat(['skipped-tests']),
 })
 ```
